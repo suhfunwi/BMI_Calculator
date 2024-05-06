@@ -1,0 +1,35 @@
+<!--bootstrap class for margins-->
+<div class=" header bg-dark-subtle mb-4 m-3 p-2 rounded-3 text-center">
+    <!--class for bg color, bottom margins, centered text and rounded corners-->
+    <h1>Please provide data. You may do so anonymously.</h1>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <h1>Body Mass Index Calculator</h1>
+        <h2>Enter your data.</h2>
+    </div>
+
+    <div class="col-md-6">
+        <!--picking the screen size the div starts stacking at
+            columns should add up to 12-->
+        <form action="/submit-data" method="POST">
+<!--            sends the submitted form to this URL-->
+            <label class="form-label" for="height">Height in meters:</label>
+            <input class="form-control" id="height" name="height" type="number" placeholder="1.0" step="0.01" min="0">
+            <br>
+            <label class="form-label" for="weight">Weight in kilograms:</label>
+            <input class="form-control" id="weight" type="number" placeholder="1.0" step="0.01" min="0" name="weight">
+            <br>
+
+            <input class="btn btn-primary" type="submit">
+            <!--class to style something into a button-->
+
+        </form>
+    </div> <!---end of second col div tag-->
+
+</div> <!--end of the row div that contains both columns-->
+
+
